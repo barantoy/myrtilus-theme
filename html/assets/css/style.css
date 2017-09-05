@@ -1,0 +1,82 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+.table tbody tr td {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+.brand h1.brand-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.card .card-header + .card-block {
+    padding-top: 20px;
+}
+
+.profile-information .profile-photo {
+    padding-bottom: 10px;
+}
+
+.profile-information .profile-photo>img {
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.fav-locations {
+    position: relative;
+}
+
+.fav-locations .fav-location {
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+    padding: 20px;
+}
+
+.fav-locations .fav-location h4 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.payment-methods table tr td p {
+    font-size: 15px;
+}
+
+.payment-methods table tr td p .fa {
+    font-size: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.table tbody tr td a.remove {
+    text-decoration: underline;
+}
+
+.modal-add-method .nav-tabs ~ .tab-content {
+    padding;
+    padding: 30px 0 0;
+}
+
+@media (min-width: 992px) {
+    .table tbody tr td a.remove {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-information .profile-info .m-b-10 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
