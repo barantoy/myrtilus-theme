@@ -13,7 +13,6 @@
     font-weight: 500;
     line-height: 22px;
     color: #fff;
-    margin-bottom: 0;
 }
 
 .card .card-header + .card-block {
@@ -58,7 +57,7 @@
     vertical-align: middle;
 }
 
-.table tbody tr td a.remove {
+.table tbody tr td.action a{
     text-decoration: underline;
 }
 
@@ -67,9 +66,83 @@
     padding: 30px 0 0;
 }
 
+/* Business */
+.horizontal-app-menu.business .menu-bar > ul {
+    margin: 0 auto;
+}
+
+.deliveries-nav, .deliveries-nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.deliveries-nav {
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.deliveries-nav li {
+    display: inline-block;
+    border-right: 1px solid #85858e;
+}
+
+.deliveries-nav li:last-child {
+    border-right: none;
+}
+
+.deliveries-nav li a {
+    color: #85858e;
+    padding: 0 10px;
+}
+
+.delivery-summary {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 30px 0 0;
+}
+
+.delivery-summary h2 {
+    line-height: normal;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.delivery-summary .summary {
+    font-size: 32px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    margin: 0 0 30px;
+    padding: 20px;
+}
+
+.delivery-summary .summary h4 {
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 0;
+}
+
+.delivery-summary-table {
+    margin: 0 -20px;
+}
+
+.fav-locations .fav-location.new-dropoff-location {
+    width: 125px;
+    cursor: pointer;
+}
+
+.fav-locations .fav-location.new-dropoff-location:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
 @media (min-width: 992px) {
-    .table tbody tr td a.remove {
-        float: right;
+    .table tbody tr td.action {
+        text-align: right;
     }
 }
 
@@ -78,5 +151,42 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+/* Custom Grid: 5 Column */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
     }
 }
