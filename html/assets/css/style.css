@@ -3,8 +3,18 @@
 * Override Pages default styles or create your own styles here
 
 */
+.ADDED-BY-JOHN {
+	display: flex;
+	height: 100%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+
 .table tbody tr td {
+    padding-top: 15px;
     padding-right: .75rem;
+    padding-bottom: 10px;
     padding-left: .75rem;
 }
 
