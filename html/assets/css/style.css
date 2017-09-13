@@ -12,9 +12,7 @@
 }
 
 .table tbody tr td {
-    padding-top: 15px;
     padding-right: .75rem;
-    padding-bottom: 10px;
     padding-left: .75rem;
 }
 
@@ -26,7 +24,7 @@
 }
 
 .card .card-header + .card-block {
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .profile-information .profile-photo {
@@ -95,7 +93,7 @@
 
 .deliveries-nav li {
     display: inline-block;
-    border-right: 1px solid #85858e;
+    margin: 0 12px;
 }
 
 .deliveries-nav li:last-child {
@@ -104,7 +102,7 @@
 
 .deliveries-nav li a {
     color: #85858e;
-    padding: 0 10px;
+    opacity: 0.6;
 }
 
 .delivery-summary {
@@ -148,6 +146,77 @@
 
 .fav-locations .fav-location.new-dropoff-location:hover {
     background-color: rgba(0, 0, 0, 0.07);
+}
+
+.business-payment-methods td i, .business-payment-methods td span {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.business-payment-methods td i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.business-payment-methods td span {
+    margin-right: 20px;
+}
+
+.business-payment-methods td span.label {
+    font-size: 14px;
+    padding: 6px 9px;
+}
+
+ul.tbl-actions, ul.tbl-actions li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.tbl-actions li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.tbl-actions li a {
+    font-size: 16px;
+    border-bottom: 1px solid #07c25f;
+    padding-bottom: 1px;
+}
+
+ul.tbl-actions li:last-child {
+    margin-right: 0;
+}
+
+ul.breadcrumb-new-delivery, ul.breadcrumb-new-delivery li {
+    list-style: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+ul.breadcrumb-new-delivery li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.breadcrumb-new-delivery li a {
+    display: block;
+    border-bottom: 1px solid #069d4d;
+}
+
+.row-checkbox {
+    position: relative;
+}
+
+.row-checkbox:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.w-50 {
+    width: 50px !important;
 }
 
 @media (min-width: 992px) {
